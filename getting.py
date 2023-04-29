@@ -4,4 +4,4 @@ def getting(response):
         "featureMember"][0]["GeoObject"]
     toponym_coodrinates = toponym["Point"]["pos"]
     toponym_longitude, toponym_lattitude = toponym_coodrinates.split(" ")
-    return (float(toponym_longitude), float(toponym_lattitude))
+    return [str(toponym_longitude), str(toponym_lattitude)]
